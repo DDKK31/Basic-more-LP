@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Basic & More</title>
+</head>
 <body>
     <a href="#main-content" class="skip-link">Spring til hovedindhold</a>
     
@@ -35,6 +36,7 @@
     </nav>
 
     <!-- Main Content -->
+      <!-- Main Content -->
     <main id="main-content" class="main-content">
         <div class="container">
             <div class="content-layout">
@@ -43,7 +45,10 @@
                     <section class="news-box" aria-labelledby="news-heading"><img src="img/toilet ting.png" alt="billeder af toilet ting" class="newsbilled">
                     </section>
                     
-                    <button class="animation-btn" aria-label="Aktivér animation funktion" <link rel="stylesheet" href="img/minitavle.png">
+                    <button class="animation-btn" aria-label="Aktivér animation funktion">
+                       <video class="miinifilm" autoplay muted loop>
+                            <source src="img/12845684_360_640_30fps.mp4" type="video/mp4">
+                        </video>
                     </button>
                     
                     <div class="text-section">
@@ -56,7 +61,9 @@
                     <h2>Se vores nye udvalg</h2>
                     
                     <button class="right-animation-btn" aria-label="Aktivér animation funktion">
-                        Animation
+                       <video class="minifilm" autoplay muted loop>
+                            <source src="img/4125003-sd_360_640_25fps.mp4" type="video/mp4">
+                       </video>
                     </button>
                     
                     <section class="right-news-box" aria-labelledby="right-news-heading"> <img src="img/Piskeris.png" alt="et billed af en piskeris cirkel" class="newsbilled">
@@ -67,13 +74,16 @@
         </div>
     </main>
 
-    <!-- Last Chance Section -->
-    <section class="last-chance" aria-labelledby="last-chance-heading">
-        <div class="container">
-            <h2 id="last-chance-heading">Sidste chance</h2>
-            <div class="cta-badge" aria-label="Sidste chance tilbud">Læs mere</div>
-        </div>
-    </section>
+   <!-- Last Chance Section -->
+<div class="banner">
+  <img src="img/Basic&More_packshots_021024_00508 (1) (1).jpg" alt="Keramik kopper">
+  <div class="banner-overlay">
+    <h2 class="banner-title">Sidste chance</h2>
+    <p>Køb det før det er for sent</p>
+  </div>
+  <button class="banner-button">Læs mere</button>
+</div>
+</section>
 
     <!-- Community Section -->
     <section id="community" class="community-section" aria-labelledby="community-heading">
@@ -101,40 +111,47 @@
     </section>
 
     <!-- Find Us Section -->
-    <section id="contact" class="find-us" aria-labelledby="find-us-heading">
-        <div class="container">
-            <h2 id="find-us-heading">Find os</h2>
-            
+<section id="contact" class="find-us" aria-labelledby="find-us-heading">
+    <div class="container">
+        <h2 id="find-us-heading">Find os</h2>
+       
+        <div class="online-section">
             <h3>Online</h3>
             <div class="online-grid" role="group" aria-label="Online platforme">
-                <div class="online-card" tabindex="0" role="button" aria-label="Online platform 1"></div>
-                <div class="online-card" tabindex="0" role="button" aria-label="Online platform 2"></div>
-                <div class="online-card" tabindex="0" role="button" aria-label="Online platform 3"></div>
-            </div>
-            
-            <div class="physical-section">
-                <h3>Fysiske</h3>
-                <h4>Butikker</h4>
-                
-                <div class="store-tags" role="group" aria-label="Butiksplaceringer">
-                    <button class="store-tag" aria-label="Find butik i Amager">Amager</button>
-                    <button class="store-tag" aria-label="Find butik i Ballerup">Ballerup</button>
-                    <button class="store-tag" aria-label="Find butik på Frederiksberg">Frederiksberg</button>
-                    <button class="store-tag" aria-label="Find butik i Fisketorvet">Fisketorvet</button>
-                    <button class="store-tag" aria-label="Find butik i Hillerød">Hillerød</button>
-                    <button class="store-tag" aria-label="Find butik i Ishøj">Ishøj</button>
-                    <button class="store-tag" aria-label="Find butik i København">København</button>
-                    <button class="store-tag" aria-label="Find butik i Lyngby">Lyngby</button>
-                    <button class="store-tag" aria-label="Find butik i Næstved">Næstved</button>
-                    <button class="store-tag" aria-label="Find butik i Nørrebro">Nørrebro</button>
-                    <button class="store-tag" aria-label="Find butik i Roskilde">Roskilde</button>
-                    <button class="store-tag" aria-label="Find butik i Rødovre">Rødovre</button>
-                    <button class="store-tag" aria-label="Find butik i Slagelse">Slagelse</button>
-                    <button class="store-tag" aria-label="Find butik i Taastrup">Taastrup</button>
+                <div class="online-card" aria-label="Facebook">
+                    <img src="img/5365678_fb_facebook_facebook logo_icon.png" alt="Facebook">
+                </div>
+                <div class="online-card" aria-label="Instagram">
+                    <img src="img/6636603_instagram_social media_social network_icon.png" alt="Instagram">
+                </div>
+                <div class="online-card" aria-label="TikTok">
+                    <img src="img/7024783_tiktok_social media_icon.png" alt="TikTok">
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="physical-section">
+            <h3>Fysiske</h3>
+            <h4>Butikker</h4>
+            <div class="store-tags">
+                <span class="store-tag">Amager</span>
+                <span class="store-tag">Ballerup</span>
+                <span class="store-tag">Frederiksberg</span>
+                <span class="store-tag">Fisketorvet</span>
+                <span class="store-tag">Hillerød</span>
+                <span class="store-tag">Ishøj</span>
+                <span class="store-tag">København</span>
+                <span class="store-tag">Lyngby</span>
+                <span class="store-tag">Næstved</span>
+                <span class="store-tag">Nørrebro</span>
+                <span class="store-tag">Roskilde</span>
+                <span class="store-tag">Rødovre</span>
+                <span class="store-tag">Slagelse</span>
+                <span class="store-tag">Taastrup</span>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
