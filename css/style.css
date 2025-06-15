@@ -134,17 +134,29 @@ body {
     gap: 20px;
 }
 
-.news-box {
+.news-box, .right-news-box {
     background-color: #C0C0C0;
-    padding: 20px;
+    padding: 0; /* Vigtigt: ingen padding */
     border-radius: 4px;
-    min-height: 200px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
 }
+
+.newsbilled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
 
 .news-box::before {
     content: '';
@@ -326,6 +338,13 @@ body {
     color: #8B4513;
     font-size: 24px;
     margin-bottom: 30px;
+}
+
+.fællesbilled {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Strækker billedet til at fylde hele området */
+    display: block;
 }
 
 .project-grid {
